@@ -78,7 +78,7 @@ GEM
     treetop (1.4.9)
       polyglot (>= 0.3.1)
     tzinfo (0.3.27)
-    wav-mp3 (0.0.3)
+    wav-mp3 (0.0.4)
       paperclip (~> 2.3)
       rails (~> 3.0)
 
