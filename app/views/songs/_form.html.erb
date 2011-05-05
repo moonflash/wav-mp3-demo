@@ -1,0 +1,12 @@
+<%= form_for @song, :html =>{:multipart =>true} do |f| %>
+  <%= f.error_messages %>
+	<p>
+	  <%= f.label :title %><br />
+	  <%= f.text_field :title %>
+	</p>
+	<p>
+	  <%= f.label :wav %><br />
+	  <%= f.file_field :wav %>
+	</p>
+  <p><%= f.submit :disable_with => "Converting to MP3..."%></p>
+<% end %>

@@ -1,0 +1,17 @@
+<% title "Songs" %>
+
+<table>
+  <tr>
+    <th>Title</th>
+  </tr>
+  <% for song in @songs %>
+    <tr>
+      <td><%= song.title %></td>
+      <td><%= link_to "Show", song %></td>
+      <td><%= link_to "Edit", edit_song_path(song) %></td>
+      <td><%= link_to "Destroy", song, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Song", new_song_path %></p>
